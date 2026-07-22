@@ -8,6 +8,11 @@ body {
     font-family: system-ui, sans-serif;
     background: #0a0a0a;
     color: #fff;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body.is-loading {
     overflow: hidden;
 }
 
@@ -41,6 +46,89 @@ body {
 .logo img {
     width: 100%;
     height: 100%;
+}
+
+.brand-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin: 0;
+    color: #fff;
+}
+
+.brand-sub {
+    color: #aaa;
+    font-size: 14px;
+    margin: 4px 0 0;
+}
+
+.container > h1 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    line-height: 1.35;
+    margin: 0 0 18px;
+    color: #fff;
+}
+
+.tool-label {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* SEO article */
+.seo-content {
+    max-width: 650px;
+    margin: 28px auto 8px;
+    padding: 8px 4px 4px;
+    color: #ccc;
+    font-size: 15.5px;
+    line-height: 1.65;
+}
+
+.seo-content section {
+    margin-bottom: 1.75rem;
+}
+
+.seo-content h2 {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.35;
+    margin: 0 0 0.75rem;
+}
+
+.seo-content h3 {
+    color: #fff;
+    font-size: 1.02rem;
+    font-weight: 600;
+    margin: 1.1rem 0 0.45rem;
+}
+
+.seo-content p {
+    margin: 0 0 0.85rem;
+}
+
+.seo-content ol,
+.seo-content ul {
+    margin: 0 0 0.85rem;
+    padding-left: 1.25rem;
+}
+
+.seo-content li {
+    margin-bottom: 0.4rem;
+}
+
+.seo-content strong {
+    color: #e8e8e8;
+    font-weight: 600;
+}
+
+.support-heading {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    color: #fff;
 }
 
 /* Card */
@@ -228,9 +316,9 @@ footer a {
     background: #000;
     border: 1px solid #2a2a2a;
     border-radius: 16px;
-    max-width: 640px;
+    max-width: 100%;
     padding: 20px;
-    margin: 15px auto;
+    margin: 20px 0 8px;
 }
 
 .support-top {
@@ -241,7 +329,8 @@ footer a {
     margin-bottom: 12px;
 }
 
-.support-top h2 {
+.support-top h2,
+.support-top .support-heading {
     font-size: 20px;
     font-weight: 700;
     margin: 0;
@@ -278,7 +367,7 @@ footer a {
     }
 
     .support-card {
-        margin: 15px 3%;
+        margin: 20px 0 8px;
     }
 
     .donate-btn {
