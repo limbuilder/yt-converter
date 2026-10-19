@@ -543,3 +543,37 @@ footer a {
     }
 
 }
+
+/* Adsterra placements */
+.ad-slot {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    overflow: hidden;
+    margin: 16px 0 8px;
+    padding: 12px 0;
+}
+
+.ad-slot--top {
+    margin: 8px 0 16px;
+    padding: 8px 0;
+}
+
+.ad-slot--rect {
+    margin: 28px 0 12px;
+}
+
+.ad-slot__inner {
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.ad-slot__inner iframe {
+    max-width: 100%;
+}
+
+.ad-slot[hidden] {
+    display: none !important;
+}
