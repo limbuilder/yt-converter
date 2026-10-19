@@ -47,7 +47,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/yt-converter/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/yt-converter/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/yt-converter/apple-touch-icon.png">
-    <link rel="stylesheet" href="/yt-converter/index.v1.css?v=1.5">
+    <link rel="stylesheet" href="/yt-converter/index.v1.css?v=1.6">
 
     <meta name="theme-color" content="#5b87ff">
     <meta name="mobile-web-app-capable" content="yes">
@@ -239,20 +239,18 @@
                 <p class="product-card__brand">Genjutsu AI</p>
                 <p class="product-card__desc">Scene/style rewrite up to 1080p</p>
             </a>
+            <!-- Adsterra: left rail skyscraper (160x600) — desktop only -->
+            <div class="ad-slot ad-slot--rail" data-ad-slot="rail-left" aria-label="Advertisement">
+                <div class="ad-slot__inner" data-ad-mount="rail-left"></div>
+            </div>
         </aside>
 
         <div class="container">
 
-        <!-- Header -->
-        <div class="header">
-            <div class="logo">
-                <img src="/yt-converter/yt-converter-logo.png" alt="yt-converter youtube downloader logo" />
-            </div>
-            <div>
-                <p class="brand-title">yt-converter</p>
-                <p class="brand-sub">Free YouTube Downloader · MP3 / MP4</p>
-            </div>
-        </div>
+        <!-- Adsterra: header (728x90) — replaces former brand bar -->
+        <aside class="ad-slot ad-slot--header" data-ad-slot="header" aria-label="Advertisement">
+            <div class="ad-slot__inner" data-ad-mount="header"></div>
+        </aside>
 
         <h1>Free YouTube Downloader — MP3 &amp; MP4</h1>
 
@@ -283,7 +281,7 @@
             <button class="exp-btn" style="background-color: #00AB5E;" id="formatBtn">MP3 / MP4</button>
         </div>
 
-        <!-- Adsterra: below tool (728x90) — same role as metro-typing below-game -->
+        <!-- Adsterra: below tool (728x90) — needs a second 728x90 unit key (header already uses one) -->
         <aside class="ad-slot" data-ad-slot="below-tool" aria-label="Advertisement">
             <div class="ad-slot__inner" data-ad-mount="below-tool"></div>
         </aside>
@@ -494,6 +492,10 @@
                 <p class="product-card__brand">Person Remover</p>
                 <p class="product-card__desc">AI inpaint, keep the background</p>
             </a>
+            <!-- Adsterra: right rail skyscraper (160x600) — desktop only -->
+            <div class="ad-slot ad-slot--rail" data-ad-slot="rail-right" aria-label="Advertisement">
+                <div class="ad-slot__inner" data-ad-mount="rail-right"></div>
+            </div>
         </aside>
 
     </div>
@@ -540,7 +542,7 @@
 
         /**
          * Adsterra for limbuilder.github.io (yt-converter).
-         * Units: Social Bar + Banner 728x90 / 320x50 / 300x250.
+         * Empty keys stay hidden until you paste Get Code from the dashboard.
          */
         const ADSTERRA = {
             enabled: true,
@@ -549,8 +551,15 @@
             stickyScriptSrc:
                 "https://pl31916019.profitableratecpmnetwork.com/97/d6/e1/97d6e18afccb5888b39a6d0b3730ef78.js",
             slots: {
-                "below-tool": {
+                // Was brand bar; uses the existing 728x90 unit.
+                header: {
                     key: "2f08b7c4d812a0ad4f6138ba40384f4d",
+                    width: 728,
+                    height: 90,
+                },
+                // Create a second Banner 728x90 under limbuilder.github.io, then paste key.
+                "below-tool": {
+                    key: "",
                     width: 728,
                     height: 90,
                 },
@@ -563,6 +572,16 @@
                     key: "a954c41b9642053d9c5fc18d0f242eab",
                     width: 300,
                     height: 250,
+                },
+                "rail-left": {
+                    key: "1742f528f3ad5f7534074c1143261dd8",
+                    width: 160,
+                    height: 600,
+                },
+                "rail-right": {
+                    key: "da5128787a156a060359267106d1254c",
+                    width: 160,
+                    height: 300,
                 },
             },
         };

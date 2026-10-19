@@ -554,6 +554,11 @@ footer a {
     padding: 12px 0;
 }
 
+.ad-slot--header {
+    margin: 0 0 16px;
+    padding: 8px 0;
+}
+
 .ad-slot--top {
     margin: 8px 0 16px;
     padding: 8px 0;
@@ -561,6 +566,13 @@ footer a {
 
 .ad-slot--rect {
     margin: 28px 0 12px;
+}
+
+.ad-slot--rail {
+    display: none;
+    margin: 16px 0 0;
+    padding: 0;
+    justify-content: center;
 }
 
 .ad-slot__inner {
@@ -576,4 +588,14 @@ footer a {
 
 .ad-slot[hidden] {
     display: none !important;
+}
+
+@media (min-width: 1100px) {
+    .ad-slot--rail:not([hidden]) {
+        display: flex;
+    }
+
+    .product-rail .ad-slot--rail {
+        flex: 0 0 auto;
+    }
 }
