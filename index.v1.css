@@ -479,6 +479,18 @@ footer a {
     text-decoration: underline;
 }
 
+.powered-by {
+    text-align: center;
+    font-size: 12px;
+    margin: 8px 0 4px;
+    color: #aaa;
+}
+
+.powered-by a {
+    color: #a78bfa;
+    text-decoration: underline;
+}
+
 .support-card {
     background: #000;
     border: 1px solid #2a2a2a;
